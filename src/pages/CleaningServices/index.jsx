@@ -6,12 +6,12 @@ import personCleaningTable from '../../assets/personCleaningTable.webp'
 
 function Services() {
   return (
-    <div class='mx-32'>
+    <>
       <div class='flex justify-around mt-15  not-visited:bg-white flex-wrap '>
-        <h2 class=' text-4xl font-bold max-w-[600px] min-w-[400px]'>
+        <h2 class=' text-4xl font-bold w-[600px] max-sm:text-2xl max-sm:mb-5 '>
           Siempre Brindamos El Mejor Servicio.
         </h2>
-        <div class='max-w-[500px] min-w-[400px] justify-items-end items-end '>
+        <div class='w-[500px]  justify-items-end items-end '>
           <h4 class='text-xl font-semibold '>Servicio</h4>
           <p class='text-gray-700'>
             Si bien podemos personalizar su plan de limpieza para satisfacer sus
@@ -23,10 +23,10 @@ function Services() {
 
       <hr class='text-green-600 h-7 w-full my-10' />
 
-      <section class='flex gap-3.5 mb-30 justify-around flex-wrap'>
-        <div class='h-auto w-[450px] mb-12'>
+      <section class='flex gap-3.5 mb-30 justify-around flex-wrap max-sm:mb-15'>
+        <div class='w-[450px] mb-12'>
           <img
-            class='aspect-square  rounded-2xl  '
+            class='rounded-2xl  '
             src={livingRoomCleaning}
             alt=''
           />
@@ -44,9 +44,9 @@ function Services() {
           </div>
         </div>
 
-        <div class='w-[450px]'>
+        <div class='w-[450px]  mb-12'>
           <img
-            class='aspect-square  rounded-2xl '
+            class='rounded-2xl '
             src={officeCleaning}
             alt=''
           />
@@ -62,9 +62,9 @@ function Services() {
           </a>
         </div>
 
-        <div class='w-[450px]'>
+        <div class='w-[450px]  mb-12'>
           <img
-            class='aspect-square  rounded-2xl '
+            class='rounded-2xl '
             src={storeCleaning}
             alt=''
           />
@@ -80,15 +80,16 @@ function Services() {
           </a>
         </div>
       </section>
-      <section class='flex mb-50 justify-around flex-wrap'>
-        <div class='w-[800px]'>
+
+      <section class='flex mb-50 justify-around flex-wrap max-sm:mb-20'>
+        <div class=' '>
           <p class='text-black text-lg mb-2 font-medium'>
             Soluciones de limpieza asequible
           </p>
-          <h2 class=' text-4xl font-bold w-[600px]'>
+          <h2 class=' text-4xl font-bold w-[600px]   max-sm:w-full'>
             Servicios de alta calidad y cordialidad a precios justos.
           </h2>
-          <p class='text-gray-700 w-[500px] mt-6 mb-9'>
+          <p class='text-gray-700 w-[500px] mt-6 mb-9  max-sm:w-fit'>
             Ofrecemos servicios de limpieza integrales adaptados a sus
             necesidades. Desde servicios de limpieza residencial...
           </p>
@@ -100,18 +101,18 @@ function Services() {
         </div>
         <div class='relative min-w-[200px]'>
           <img
-            class='w-[200px] z-10 absolute -bottom-10 -left-10 rounded-3xl border-t-10 border-r-10 border-white'
+            class='w-[200px] z-10 absolute -bottom-10 -left-10 rounded-3xl border-t-10 border-r-10 border-white max-sm:scale-70 max-sm:ml-7'
             src={personCleaningTable}
             alt=''
           />
           <img
-            class='w-[400px] rounded-3xl  border-t-10 border-r-10 border-green-700'
+            class='w-[400px] rounded-3xl  border-t-10 border-r-10 border-green-700 max-sm:scale-70 max-sm:ml-7'
             src={personCleaningTable}
             alt=''
           />
         </div>
       </section>
-    </div>
+    </>
   )
 }
 
