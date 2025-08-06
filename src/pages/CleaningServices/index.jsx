@@ -5,6 +5,7 @@ import storeCleaning from '../../assets/storeCleaning.png'
 import personCleaningTable from '../../assets/personCleaningTable.webp'
 
 function Services() {
+  
   return (
     <>
       <div class='flex justify-around mt-15  not-visited:bg-white flex-wrap '>
@@ -32,7 +33,7 @@ function Services() {
           />
           <div>
             <h4 class='text-2xl font-[600] my-3'>Limpieza de viviendas</h4>
-            <p class='mb-9'>
+            <p class='mb-9 text-gray-700'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
               consectetur.
             </p>
@@ -51,7 +52,7 @@ function Services() {
             alt=''
           />
           <h4 class='text-2xl font-[600] my-3'>Limpieza de oficinas</h4>
-          <p class='mb-9'>
+          <p class='mb-9 text-gray-700'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
             consectetur,
           </p>
@@ -69,7 +70,7 @@ function Services() {
             alt=''
           />
           <h4 class='text-2xl font-[600] my-3'>Limpieza de comercion</h4>
-          <p class='mb-9'>
+          <p class='mb-9 text-gray-700'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
             consectetur,
           </p>

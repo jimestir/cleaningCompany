@@ -35,11 +35,11 @@ function Index() {
     return (
       <section>
         <div class='flex justify-around mt-15  not-visited:bg-white flex-wrap '>
-          <h2 class=' text-4xl font-bold w-[600px] '>
+          <h2 class=' text-4xl font-bold w-[600px] max-sm:w-full mb-7'>
             Una limpieza eficaz requiere un equipo de limpieza de expertos
           </h2>
-          <div class='w-[400px] justify-items-end items-end '>
-            <h4 class='text-xl font-semibold '>Equipo experto</h4>
+          <div class='w-[400px] justify-items-end items-end max-sm:w-full  '>
+            <h4 class='text-xl font-semibold mb-2'>Equipo experto</h4>
             <p class='text-gray-700'>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Similique illo rem explicabo repellendus inventore! Amet fugiat
@@ -109,8 +109,9 @@ function Index() {
                 class='rounded-t-4xl'
               />
               <div class='py-5 px-2'>
-                <h5 class='text-2xl mb-4 font-semibold'>Name employed</h5>
-                <p>
+                <h5 class='text-2xl  font-semibold'>Name employed</h5>
+                <p class='my-3'>⭐⭐⭐⭐⭐</p>
+                <p class='text-gray-700'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
                   libero molestiae atque nobis quis reiciendis impedit
                   temporibus. Id quia magni natus.
@@ -125,8 +126,9 @@ function Index() {
                 class='rounded-t-4xl'
               />
               <div class='py-5 px-2'>
-                <h5 class='text-2xl mb-4 font-semibold'>Name employed</h5>
-                <p>
+                <h5 class='text-2xl font-semibold'>Name employed</h5>
+                <p class='my-3'>⭐⭐⭐⭐⭐</p>
+                <p class='text-gray-700'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
                   libero molestiae atque nobis quis reiciendis impedit
                   temporibus. Id quia magni natus.
@@ -141,8 +143,9 @@ function Index() {
                 class='rounded-t-4xl'
               />
               <div class='py-5  px-2'>
-                <h5 class='text-2xl mb-4 font-semibold'>Name employed</h5>
-                <p>
+                <h5 class='text-2xl font-semibold'>Name employed</h5>
+                <p class='my-3'>⭐⭐⭐⭐⭐</p>
+                <p class='text-gray-700'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
                   libero molestiae atque nobis quis reiciendis impedit
                   temporibus. Id quia magni natus.
