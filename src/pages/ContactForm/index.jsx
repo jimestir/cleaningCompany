@@ -2,9 +2,23 @@ import { useState } from 'react'
 import phoneCall from '../../assets/phone-call.svg'
 import mail from '../../assets/mail.svg'
 function ContactForm() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(form)
+  }
   return (
     <>
       <h3 class=' text-4xl font-bold w-full'>Encuentranos</h3>
@@ -27,7 +41,7 @@ function ContactForm() {
                   +(34) 690 268 030
                 </a>
                 <a
-                  class='hover:text-green-700 text-shadow-gray-700'
+                  class='hover:text-green-700 text-gray-700'
                   href='tel:+34620550003'>
                   +(34) 620 550 003
                 </a>
@@ -36,7 +50,7 @@ function ContactForm() {
           </div>
 
           <div class='flex my-5 shadow-lg px-5 py-5 rounded-2xl'>
-            <div class='bg-[#00a63e] w-[50px] h-[50px] rounded-full flex justify-center mr-3.5'>
+            <div class='bg-[#00a63e] w-[50px] h-[50px] rounded-full flex justify-center mr-3.5 mt-2'>
               <img
                 class='scale-60'
                 src={mail}
@@ -54,6 +68,7 @@ function ContactForm() {
           </div>
         </section>
         <form
+          onSubmit={handleSubmit}
           class='flex flex-col gap-10 w-full mt-10'
           action='https://formsubmit.co/your@email.com'
           method='POST'>
@@ -71,28 +86,30 @@ function ContactForm() {
           <input
             class='shadow-lg shadow-balck-50/5 border-[.5px] border-gray-100 w-full h-[45px] px-3 focus:border-green-700 focus:border-2 outline-none rounded-[5px] text-gray-700'
             type='text'
+            name='name'
             placeholder='Nombre'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={form.name}
+            onChange={handleChange}
           />
           <input
             class='shadow-lg shadow-balck-50/5 border-[.5px] border-gray-100 w-full h-[45px] px-3  focus:border-green-700 focus:border-2 outline-none rounded-[5px] text-gray-700'
             type='email'
+            name='email'
             placeholder='Correo electronico'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={form.email}
+            onChange={handleChange}
           />
-          <input
-            class='shadow-lg shadow-balck-50/5 border-[.5px] border-gray-100 w-full h-[45px] px-3  focus:border-green-700 focus:border-2 outline-none rounded-[5px] text-gray-700'
-            type='text'
+          <textarea
+            class='shadow-lg shadow-balck-50/5 border-[.5px] border-gray-100 w-full h-[150px] px-3  focus:border-green-700 focus:border-2 outline-none rounded-[5px] text-gray-700 resize-y field-sizing-content'
             placeholder='Mensaje'
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            name='message'
+            value={form.message}
+            onChange={handleChange}
           />
 
           <button
-            // onClick=''
-            class='bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700 transition w-fit mb-10 '>
+            type='submit'
+            class='bg-green-600 text-white px-5 py-3 rounded hover:bg-green-700 transition w-fit mb-10 '>
             Enviar mensanje
           </button>
         </form>

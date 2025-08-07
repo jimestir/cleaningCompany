@@ -1,11 +1,10 @@
 import React from 'react'
-import livingRoomCleaning from '../../assets/livingRoomCleaning.webp'
-import officeCleaning from '../../assets/officeCleaning.png'
-import storeCleaning from '../../assets/storeCleaning.png'
-import personCleaningTable from '../../assets/personCleaningTable.webp'
+import livingRoomCleaning from '../../assets/livingRoomCleaning.jpg'
+import officeCleaning from '../../assets/officeCleaning.jpg'
+import storeCleaning from '../../assets/storeCleaning.jpg'
+import personCleaningTable from '../../assets/personCleaningTable.jpg'
 
 function Services() {
-  
   return (
     <>
       <div class='flex justify-around mt-15  not-visited:bg-white flex-wrap '>
@@ -34,8 +33,12 @@ function Services() {
           <div>
             <h4 class='text-2xl font-[600] my-3'>Limpieza de viviendas</h4>
             <p class='mb-9 text-gray-700'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-              consectetur.
+              Ofrecemos limpieza profunda, detallada y periódica para que
+              disfrutes de un hogar fresco, desinfectado y acogedor. <br />
+              <i>
+                | Recupera tu tiempo libre. Nosotros nos encargamos de la
+                limpieza.
+              </i>
             </p>
             <a
               href='#'
@@ -53,8 +56,10 @@ function Services() {
           />
           <h4 class='text-2xl font-[600] my-3'>Limpieza de oficinas</h4>
           <p class='mb-9 text-gray-700'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-            consectetur,
+            Un espacio limpio reduce el estrés y aumenta la eficiencia de tu
+            equipo. Higiene garantizada para oficinas pequeñas, medianas o
+            grandes. <br />
+            <i>| Haz que tu oficina hable bien de tu empresa.</i>
           </p>
           <a
             href='#'
@@ -71,8 +76,13 @@ function Services() {
           />
           <h4 class='text-2xl font-[600] my-3'>Limpieza de comercion</h4>
           <p class='mb-9 text-gray-700'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-            consectetur,
+            La imagen de tu negocio comienza por la limpieza. Nos encargamos de
+            que tu tienda, peluquería, restaurante o local esté siempre
+            impecable, sin interrumpir tu actividad. <br />
+            <i>
+              | Aumenta la confianza de tus clientes con un local limpio y
+              cuidado.
+            </i>
           </p>
           <a
             href='#'
