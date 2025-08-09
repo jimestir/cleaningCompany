@@ -80,7 +80,7 @@ function ContactForm() {
         <form
           // onSubmit={handleSubmit}
           class='flex flex-col gap-10 w-full mt-10 ma'
-          action='https://formsubmit.co/limpiezaclamar@gmail.com'
+          action='https://formsubmit.co/limpiezasclamar@gmail.com'
           method='POST'>
           <div>
             <p class='font-semibold'>Envianos un correo para más información</p>
