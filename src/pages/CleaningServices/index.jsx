@@ -7,7 +7,9 @@ import personCleaningTable from '../../assets/personCleaningTable.jpg'
 function Services() {
   return (
     <>
-      <div class='flex justify-around mt-15  not-visited:bg-white flex-wrap '>
+      <div
+      id='services'
+        class='flex justify-around mt-15  not-visited:bg-white flex-wrap'>
         <h2 class=' text-4xl font-bold w-[600px] max-sm:text-2xl max-sm:mb-5 '>
           Siempre Brindamos El Mejor Servicio.
         </h2>
@@ -40,11 +42,11 @@ function Services() {
                 limpieza.
               </i>
             </p>
-            <a
+            {/* <button
               href='#'
               class='bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition mt-10'>
               Get Start Now
-            </a>
+            </button> */}
           </div>
         </div>
 
@@ -61,11 +63,11 @@ function Services() {
             grandes. <br />
             <i>| Haz que tu oficina hable bien de tu empresa.</i>
           </p>
-          <a
+          {/* <button
             href='#'
             class='bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition '>
             Get Start Now
-          </a>
+          </button> */}
         </div>
 
         <div class='w-[450px]  mb-12'>
@@ -84,11 +86,11 @@ function Services() {
               cuidado.
             </i>
           </p>
-          <a
+          {/* <button
             href='#'
             class='bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition'>
             Get Start Now
-          </a>
+          </button> */}
         </div>
       </section>
 
@@ -104,11 +106,11 @@ function Services() {
             Ofrecemos servicios de limpieza integrales adaptados a sus
             necesidades. Desde servicios de limpieza residencial...
           </p>
-          <a
+          {/* <button
             href='#'
             class='bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition'>
             Get Start Now
-          </a>
+          </button> */}
         </div>
         <div class='relative min-w-[200px]'>
           <img

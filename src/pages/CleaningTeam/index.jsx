@@ -52,7 +52,7 @@ function Index() {
 
       <hr class='text-green-600 h-7 w-full my-10' />
 
-      <div class='flex justify-around flex-wrap max-sm:hidden'>
+      <div class='flex justify-around flex-wrap max-sm:hidden mb-30 gap-10'>
         <div class='w-[400px] rounded-4xl border-l-10 border-green-700 hover:scale-105 duration-300 ease-in max-sm:mb-10'>
           <img
             src={employedOne}
@@ -61,12 +61,12 @@ function Index() {
           />
           <div class='py-5 px-2'>
             <h5 class='text-2xl mb-4 font-semibold'>Carlos Ramírez</h5>
-            <h6>Especialista en oficinas y locales comerciales</h6>
+            {/* <h6>Especialista en oficinas y locales comerciales</h6> */}
+            <p class='my-3'>⭐⭐⭐⭐⭐</p>
             <p>
-              Carlos es meticuloso, puntual y siempre atento a los detalles. Su
-              experiencia en limpieza de espacios de trabajo lo convierte en el
-              aliado perfecto para mantener tu oficina o negocio impecable y con
-              un ambiente saludable.
+              Responsable, puntual y perfeccionista. Se especializa en mantener
+              oficinas y comercios en perfecto estado. Clientes satisfechos
+              garantizan su eficacia y compromiso.
             </p>
           </div>
         </div>
@@ -77,11 +77,12 @@ function Index() {
             class='rounded-t-4xl'
           />
           <div class='py-5 px-2'>
-            <h5 class='text-2xl mb-4 font-semibold'>Name employed</h5>
+            <h5 class='text-2xl mb-4 font-semibold'>Laura Torres</h5>
+            <p class='my-3'>⭐⭐⭐⭐⭐</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              libero molestiae atque nobis quis reiciendis impedit temporibus.
-              Id quia magni natus.
+              Atenta, cuidadosa y dedicada. Ideal para limpiezas en hogares y
+              espacios sensibles. Su trabajo es detallado, con enfoque en la
+              comodidad y el orden.
             </p>
           </div>
         </div>
@@ -92,12 +93,12 @@ function Index() {
             class='rounded-t-4xl'
           />
           <div class='py-5  px-2'>
-            <h5 class='text-2xl mb-4 font-semibold'>Carlos Ramírez</h5>
-            // !!
+            <h5 class='text-2xl mb-4 font-semibold'>Andrés Gómez</h5>
+            <p class='my-3'>⭐⭐⭐⭐⭐</p>
             <p>
-              Responsable, puntual y perfeccionista. Se especializa en mantener
-              oficinas y comercios en perfecto estado. Clientes satisfechos
-              garantizan su eficacia y compromiso.
+              Eficiente, rápido y resolutivo. Experto en limpiezas exigentes
+              como post-obras o naves industriales. Utiliza métodos y productos
+              específicos para cada tarea.
             </p>
           </div>
         </div>
@@ -111,18 +112,16 @@ function Index() {
             <img
               src={employedOne}
               alt='Photo employed'
-              class='rounded-t-4xl px-2'
+              class='rounded-t-4xl'
             />
             <div class='py-5 px-2'>
-             <div class='px-2'>
-                <h5 class='text-2xl  font-semibold'>Carlos Ramírez</h5>
-                <p class='my-3'>⭐⭐⭐⭐⭐</p>
-                <p class='text-gray-700'>
-                  Responsable, puntual y perfeccionista. Se especializa en
-                  mantener oficinas y comercios en perfecto estado. Clientes
-                  satisfechos garantizan su eficacia y compromiso.
-                </p>
-             </div>
+              <h5 class='text-2xl  font-semibold'>Carlos Ramírez</h5>
+              <p class='my-3'>⭐⭐⭐⭐⭐</p>
+              <p class='text-gray-700'>
+                Responsable, puntual y perfeccionista. Se especializa en
+                mantener oficinas y comercios en perfecto estado. Clientes
+                satisfechos garantizan su eficacia y compromiso.
+              </p>
             </div>
           </div>
 

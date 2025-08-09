@@ -1,6 +1,8 @@
 import logo from '../../assets/logo.webp'
+import useScrollToId from '../../hook/useScrollToId'
 
 function Header() {
+  const scrollToId = useScrollToId(0)
   return (
     <header class='flex items-center justify-between px-8 py-4 bg-white sticky top-0 z-20 shadow-lg max-sm:px-0'>
       <div class='flex items-center space-x-2'>
@@ -24,16 +26,19 @@ function Header() {
           Inicio
         </a>
         <a href='#'>Sobre nosotros</a>
-        <a href='#'>Servicios</a>
-        <a href='#'>Blog</a>
+
+        <button href='#'>Servicios</button>
+
+        {/* <a href='#'>Blog</a> */}
         <a href='#'>Contacto</a>
       </nav>
 
-      <a
+      <button
+        onClick={() => scrollToId("contact")}
         href='#'
-        class='bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700 transition max-sm:scale-80 '>
+        class='bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700 transition max-sm:scale-80 scroll-auto'>
         Obtener servicio
-      </a>
+      </button>
     </header>
   )
 }
