@@ -2,7 +2,7 @@ import frontPageOne from '../../assets/p2.jpg'
 import useScrollToId from '../../hook/useScrollToId'
 function Home() {
   const scrollToIdServies = useScrollToId(-130)
-  const scrollToIdContact = useScrollToId()
+  const scrollToIdContact = useScrollToId(-100)
   return (
     <>
       <section class=''>
